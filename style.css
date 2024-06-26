@@ -1,0 +1,138 @@
+*{
+	box-sizing: border-box;
+}
+
+
+
+
+body{background-color: lightgrey;}
+
+/**************************************************
+*******************headerstyling*******************
+**************************************************/
+
+
+
+.logo{
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.search input{
+	width: 100%;
+	background-color: #f0f5ff;
+	height: 40px;
+	border: 0;
+	border-radius: 6px;
+	font-size: 17px;
+}
+
+.loginli .login:hover{ background-color: blue; color: white;}
+.loginli:hover .dropdown-menu{display: block;}
+
+
+.login{	border-radius: 7px;}
+
+
+
+ /*sign up button in login li*/
+
+button{
+	border:0;
+	color: blue;
+	background-color: white;
+	font-weight: bolder;
+}
+
+
+
+/**************************************************
+*******************menu styling*******************
+**************************************************/
+
+
+
+.list:hover .dropdown-menu{display: block;}
+.list a:hover{color: blue;}
+
+
+
+@media (max-width: 700px;){
+	.flex-container {
+		flex-direction: column;
+		width: 100%;
+	}	
+
+}
+
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
+
+.card{margin: 20px;}
+
+
+
+
+/************************CAROUSELS MEDIA QUERY*****************
+***********************************************************/
+
+
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+      display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+      display: block;
+    }
+  }
+
+  .carousel-inner .carousel-item.active,
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    display: flex;
+  }
+
+  /* medium and up screens */
+  @media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+  }
+
+  .carousel-inner .carousel-item-end,
+  .carousel-inner .carousel-item-start { 
+    transform: translateX(0);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
